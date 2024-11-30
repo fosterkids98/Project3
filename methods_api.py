@@ -156,10 +156,39 @@ def get_ordered_items(order_id):
     
     return order_items_schema.jsonify(ordered_items)
 """===============  Item Methods  ==============="""
+#CREATE LIST OF PRODUCTS
+@app.route('/product_list', methods=['POST'])
+def create_products():
+    try:
+        products = request.get_json()
+
+        # Ensure the input is a list
+        if not isinstance(products, list):
+            return jsonify({"error": "Expected a list of products."}), 400
+        
+        # Create product instances from the list and add them to the session
+        product_objects = []
+        for product_data in products:
+            product = Item(
+                serial=product_data['serial'],
+                name=product_data['name'],
+                price=product_data['price'],
+                description=product_data['description']
+            )
+            product_objects.append(product)
+
+        db.session.add_all(product_objects)
+        db.session.commit()
+
+        return jsonify({"message": "Products saved successfully."}), 200
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"error": "Failed to save products.", "details": str(e)}), 500
 
 #CREATE A PRODUCT
 @app.route('/products', methods=['POST'])
 def create_item():
+    
     try:
         item_data = item_schema.load(request.json)
     except ValidationError as e:
