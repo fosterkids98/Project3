@@ -5,11 +5,11 @@ A simple api for storing User, Orders & Products in a database.
 
 
 #Functions
-
+---
 #-User Functions
-
+--
 --Create User
-
+-
   --Endpoint: /users
 
       -name
@@ -22,21 +22,21 @@ A simple api for storing User, Orders & Products in a database.
   
 
 --Retrieve all Users
-
+-
   --Endpoint: /users
   
   --Method: GET
   
 
 --Retrieve one User
-
+-
   --Endpoint: /users
   
   --Method: GET
 
   
 --Update User info
-  
+  -
   --Endpoint: /users/<int:user_id>
   
     -name
@@ -49,7 +49,7 @@ A simple api for storing User, Orders & Products in a database.
 
 
 --Delete a User
-
+-
   --Endpoint: /users/<int:user_id>
   
   --Method: DELETE
@@ -57,9 +57,9 @@ A simple api for storing User, Orders & Products in a database.
 
 
 #Order Functions
-
+--
 --Create Order
-
+-
   --Endpoint: /orders
   
     -user_id
@@ -68,28 +68,28 @@ A simple api for storing User, Orders & Products in a database.
 
 
 --Add a Product to an Order
-
+-
   --Endpoint: /orders/<int:order_id>/add_product/<int:product_id>
   
   --Method: POST
 
 
 --Remove a Product from an Order
-
+-
   --Endpoint: /orders/<int:order_id>/remove_product/<int:item_id>
   
   --Method: DELETE
 
 
 --Get all Orders for a User
-
+-
   --Endpoint: /orders/users/<user_id>
   
   --Method: GET
 
 
 --Get all Products from an Order
-
+-
   --Endpoint: /orders/<order_id>/products
   
   --Method: GET
@@ -97,7 +97,7 @@ A simple api for storing User, Orders & Products in a database.
 
 
 #Product Functions
-
+-
 --Creat Products in list format
 
   --Endpoint: /product_list
@@ -134,7 +134,7 @@ A simple api for storing User, Orders & Products in a database.
 
   
 --Create a Product
-  
+  -
   --Endpoint: /products
   
     -serial
@@ -149,28 +149,28 @@ A simple api for storing User, Orders & Products in a database.
 
 
 --Retrieve all Products
-
+-
   --Endpoint: /products
   
   --Method: GET
 
 
 --Retrieve one Product
-
+-
   --Endpoint: /products/<int:id>
   
   --Method: GET
 
 
 --Update a Product listing
-
+-
   --Endpoint: /products/<int:id>
   
   --Method: PUT
 
 
 --Delete a Product listing
-
+-
   --Endpoint: /products/<int:id>
   
   --Method: DELETE
@@ -182,7 +182,7 @@ A simple api for storing User, Orders & Products in a database.
 
 
 #EXAMPLE PRODUCTS  
-
+-
 for easier insertion into database use '/product_list' api method
 
 [
@@ -252,7 +252,7 @@ for easier insertion into database use '/product_list' api method
     
     "description": "1.7L electric kettle with fast boiling, auto shut-off, and stainless steel design."
   },
-
+  
   {
   
     "serial": "1007",
@@ -296,4 +296,6 @@ for easier insertion into database use '/product_list' api method
     
     "description": "Ergonomic gaming mouse with customizable RGB lighting, 8000 DPI sensor, and programmable buttons."
   }
+  
 ]
+-
