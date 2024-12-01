@@ -186,10 +186,7 @@ A simple api for storing User, Orders & Products in a database.
 for easier insertion into database use '/product_list' api method
 
 [
-
-
   {
-  
     "serial": "3001",
     
     "name": "Smartphone X200",
@@ -197,11 +194,8 @@ for easier insertion into database use '/product_list' api method
     "price": 599.99,
     
     "description": "A cutting-edge smartphone with a 6.5-inch OLED display, 128GB storage, and 5G capability."
-  
   },
-  
   {
-  
     "serial": "7002",
     
     "name": "Wireless Headphones Pro",
@@ -209,11 +203,8 @@ for easier insertion into database use '/product_list' api method
     "price": 199.99,
     
     "description": "Noise-cancelling headphones with Bluetooth 5.0 and 30 hours of battery life."
-  
   },
-  
   {
-  
     "serial": "2003",
     
     "name": "4K Ultra HD TV",
@@ -221,11 +212,8 @@ for easier insertion into database use '/product_list' api method
     "price": 899.99,
     
     "description": "A 55-inch 4K smart TV with HDR support and integrated streaming apps."
-  
   },
-  
   {
-  
     "serial": "5004",
     
     "name": "Smartwatch 360",
@@ -233,11 +221,8 @@ for easier insertion into database use '/product_list' api method
     "price": 249.99,
     
     "description": "Fitness tracker and smartwatch with heart rate monitoring, GPS, and sleep tracking."
-  
   },
-  
   {
-  
     "serial": "3005",
     
     "name": "Laptop Pro 15",
@@ -245,11 +230,8 @@ for easier insertion into database use '/product_list' api method
     "price": 1299.99,
     
     "description": "A high-performance laptop with a 15-inch Retina display, Intel i7 processor, and 16GB RAM."
-  
   },
-  
   {
-  
     "serial": "9006",
     
     "name": "Electric Kettle X",
@@ -257,11 +239,8 @@ for easier insertion into database use '/product_list' api method
     "price": 39.99,
     
     "description": "1.7L electric kettle with fast boiling, auto shut-off, and stainless steel design."
-  
   },
-  
   {
-  
     "serial": "1007",
     
     "name": "Cordless Vacuum Cleaner",
@@ -269,11 +248,8 @@ for easier insertion into database use '/product_list' api method
     "price": 159.99,
     
     "description": "Powerful cordless vacuum with multiple attachments and a HEPA filter for home cleaning."
-  
   },
-  
   {
-  
     "serial": "6008",
     
     "name": "Portable Power Bank 10000mAh",
@@ -281,11 +257,9 @@ for easier insertion into database use '/product_list' api method
     "price": 29.99,
     
     "description": "Compact and powerful 10000mAh power bank for charging devices on the go."
-  
   },
   
   {
-  
     "serial": "5009",
     
     "name": "Bluetooth Smart Scale",
@@ -293,11 +267,8 @@ for easier insertion into database use '/product_list' api method
     "price": 49.99,
     
     "description": "Digital smart scale with Bluetooth connectivity to sync your weight data with your phone."
-  
   },
-  
   {
-  
     "serial": "4010",
     
     "name": "Gaming Mouse RX500",
@@ -305,7 +276,5 @@ for easier insertion into database use '/product_list' api method
     "price": 59.99,
     
     "description": "Ergonomic gaming mouse with customizable RGB lighting, 8000 DPI sensor, and programmable buttons."
-  
   }
-  
 ]
