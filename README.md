@@ -298,4 +298,4 @@ for easier insertion into database use '/product_list' api method
   }
   
 ]
--
+
