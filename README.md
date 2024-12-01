@@ -9,103 +9,180 @@ A simple api for storing User, Orders & Products in a database.
 #-User Functions
 
 --Create User
+
   --Endpoint: /users
+
       -name
+      
       -email
+      
       -address
+
   --Method: POST
   
+
 --Retrieve all Users
+
   --Endpoint: /users
+  
   --Method: GET
   
+
 --Retrieve one User
+
   --Endpoint: /users
+  
   --Method: GET
+
   
 --Update User info
+  
   --Endpoint: /users/<int:user_id>
+  
     -name
+    
     -email
+    
     -address
+  
   --Method: PUT
 
+
 --Delete a User
+
   --Endpoint: /users/<int:user_id>
+  
   --Method: DELETE
+
 
 
 #Order Functions
 
 --Create Order
+
   --Endpoint: /orders
+  
     -user_id
+  
   --Method: POST
+
 
 --Add a Product to an Order
+
   --Endpoint: /orders/<int:order_id>/add_product/<int:product_id>
+  
   --Method: POST
 
+
 --Remove a Product from an Order
+
   --Endpoint: /orders/<int:order_id>/remove_product/<int:item_id>
+  
   --Method: DELETE
 
+
 --Get all Orders for a User
+
   --Endpoint: /orders/users/<user_id>
+  
   --Method: GET
 
+
 --Get all Products from an Order
+
   --Endpoint: /orders/<order_id>/products
+  
   --Method: GET
+
 
 
 #Product Functions
+
 --Creat Products in list format
+
   --Endpoint: /product_list
+  
     [
+    
       {
+      
         "serial": serial
+        
         "name": "name"
+        
         "price": 00.00
+        
         "description": "description"
+      
       },
+      
       {
+      
         "serial": serial
+        
         "name": "name"
+        
         "price": 00.00
+        
         "description": "description"
+      
       }
+      
       ]
+  
   --Method: POST
+
   
 --Create a Product
+  
   --Endpoint: /products
+  
     -serial
+    
     -name
+    
     -price
+    
     -description
+  
   --Method: POST
 
+
 --Retrieve all Products
+
   --Endpoint: /products
+  
   --Method: GET
+
 
 --Retrieve one Product
+
   --Endpoint: /products/<int:id>
+  
   --Method: GET
 
+
 --Update a Product listing
+
   --Endpoint: /products/<int:id>
+  
   --Method: PUT
 
+
 --Delete a Product listing
+
   --Endpoint: /products/<int:id>
+  
   --Method: DELETE
+
+
+
 
 
 
 
 #EXAMPLE PRODUCTS  
+
 for easier insertion into database use '/product_list' api method
 
 [
