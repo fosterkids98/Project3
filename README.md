@@ -196,7 +196,6 @@ for easier insertion into database use '/product_list' api method
     "price": 599.99,
     
     "description": "A cutting-edge smartphone with a 6.5-inch OLED display, 128GB storage, and 5G capability."
-    
   },
   
   {
@@ -208,7 +207,6 @@ for easier insertion into database use '/product_list' api method
     "price": 199.99,
     
     "description": "Noise-cancelling headphones with Bluetooth 5.0 and 30 hours of battery life."
-    
   },
   
   {
@@ -220,7 +218,6 @@ for easier insertion into database use '/product_list' api method
     "price": 899.99,
     
     "description": "A 55-inch 4K smart TV with HDR support and integrated streaming apps."
-    
   },
   
   {
@@ -232,7 +229,6 @@ for easier insertion into database use '/product_list' api method
     "price": 249.99,
     
     "description": "Fitness tracker and smartwatch with heart rate monitoring, GPS, and sleep tracking."
-    
   },
   
   {
@@ -244,7 +240,6 @@ for easier insertion into database use '/product_list' api method
     "price": 1299.99,
     
     "description": "A high-performance laptop with a 15-inch Retina display, Intel i7 processor, and 16GB RAM."
-    
   },
   
   {
@@ -256,7 +251,6 @@ for easier insertion into database use '/product_list' api method
     "price": 39.99,
     
     "description": "1.7L electric kettle with fast boiling, auto shut-off, and stainless steel design."
-    
   },
 
   {
@@ -302,5 +296,4 @@ for easier insertion into database use '/product_list' api method
     
     "description": "Ergonomic gaming mouse with customizable RGB lighting, 8000 DPI sensor, and programmable buttons."
   }
-  
 ]
